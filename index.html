@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentease</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="Rentease Logo">
+                <span>Rentease</span>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="./public/property.html"><i class="fas fa-plus"></i> Post Property</a>
+            <!-- Profile link shown only when logged in -->
+            <a id="profileLink" href="profile.html" style="display:none;"><i class="fas fa-user"></i> Profile</a>
+        </nav>
+        <div class="auth-buttons">
+            <!-- Show Login/Signup only when the user is not logged in -->
+            <button id="loginBtn" class="login" onclick="window.location.href='login.html'" style="display:inline;">Login</button>
+            <button id="signupBtn" class="signup" onclick="window.location.href='signup.html'" style="display:inline;">Signup</button>
+            <!-- Show Logout only when the user is logged in -->
+            <button id="logoutBtn" class="logout" style="display:none;" onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <main>
+        <h1>Find Your Perfect <span class="highlight">RENTAL</span> Property</h1>
+        <p>Discover rooms, flats, and shops near you</p>
+        <div class="search-bar">
+            <input type="text" placeholder="Search by Location...">
+            <button class="search-button">Search</button>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Rentease. All rights reserved.</p>
+    </footer>
+<script src="home.js"></script> <!-- JS to handle login/logout visibility -->
+</body>
+</html>
