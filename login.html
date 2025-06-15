@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Rentease</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <div class="form-container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <input type="submit" value="Login" />
+        <p>Don't have an account? <a href="signup.html">Signup</a></p>
+        <p class="error" id="loginError"></p>
+      </form>
+    </div>
+  </main>
+  <script src="login.js"></script>
+</body>
+</html>
